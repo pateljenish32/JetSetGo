@@ -6,13 +6,14 @@
  */
 
 import React from 'react';
-import {SafeAreaView, View} from 'react-native';
+import {View} from 'react-native';
+import AppNavigator from './src/navigation/AppNavigator';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <View style={{flex: 1}}></View>
-    </SafeAreaView>
+    <View style={{flex: 1}}>
+      <AppNavigator />
+    </View>
   );
 }
 
